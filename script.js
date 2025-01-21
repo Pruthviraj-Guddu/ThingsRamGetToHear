@@ -65,6 +65,9 @@ function speakStatement(statementId) {
   // Detect the language of the text to speak using a simple check for Kannada characters
   utterance.lang = /[\u0C80-\u0CFF]/.test(textToSpeak) ? "kn-IN" : "en-US";
 
+  // Set the rate for slower speech
+  utterance.rate = 0.7; // Default is 1.0, lower values make the speech slower
+
   window.speechSynthesis.speak(utterance);
 }
 
