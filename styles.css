@@ -1,45 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  .tease {
-    display: flex; /* Use flexbox to align button and text horizontally */
-    align-items: center; /* Vertically center button and text */
-    justify-content: center; /* Optional: Center the entire block */
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-right: 20px; /* Space between button and text */
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-    margin: 0; /* Remove default margin from p to prevent extra space */
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  margin: 20px 0;
+  border-spacing: 20px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin: 0;
+}
