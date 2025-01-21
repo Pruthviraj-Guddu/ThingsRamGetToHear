@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press to Speak Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+    .statement {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Press to Speak Webpage</h1>
+
+  <div class="statement">
+    <p id="statement1">This is the first statement. Press the button to hear it!</p>
+    <button onclick="speakStatement('statement1')">Press to Speak</button>
+  </div>
+
+  <div class="statement">
+    <p id="statement2">Here is the second statement. Click the button to hear it!</p>
+    <button onclick="speakStatement('statement2')">Press to Speak</button>
+  </div>
+
+  <div class="statement">
+    <p id="statement3">This is another statement. Press the button to hear it out loud!</p>
+    <button onclick="speakStatement('statement3')">Press to Speak</button>
+  </div>
+
+  <script>
+    function speakStatement(statementId) {
+      // Get the text of the statement by its ID
+      const text = document.getElementById(statementId).innerText;
+
+      // Use the SpeechSynthesis API to read the text
+      const utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
