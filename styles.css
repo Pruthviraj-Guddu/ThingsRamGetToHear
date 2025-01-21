@@ -50,7 +50,6 @@ p {
   margin: 0;
 }
 
-/* Hide text that should not be displayed */
 .hidden-text {
   display: none;
 }
@@ -64,4 +63,11 @@ p {
 .kannada {
   font-size: 18px;
   color: #555;
+}
+
+/* Improve consistency */
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 15px;
 }
