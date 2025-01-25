@@ -15,6 +15,11 @@ const teases = [
     whatToRead: "Rām, Taleya illa.", // Text to read aloud
     whatToDisplay: "ರಾಮ್, ತಲೆ ರಿಲ್ಲ..", // Text to display
   },
+  {
+    id: "tease4",
+    whatToRead: "You suck more than your vaccume cleaner!!", // Text to read aloud
+    whatToDisplay: "You suck more than your vaccume cleaner!!.", // Text to display
+  },
 ];
 
 // Utility function to create a DOM element with specific classes and content
