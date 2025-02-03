@@ -23,7 +23,7 @@ const teases = [
     id: "tease5",
     whatToRead: "anyway you sex life sucks" 
     whatToDisplay: anyway you sex life sucks"!!.", // Text to display
-  },
+  }
 
 ];
 
