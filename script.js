@@ -21,8 +21,8 @@ const teases = [
     whatToDisplay: "You suck more than your vaccume cleaner!!.", // Text to display
   }, {
     id: "tease5",
-    whatToRead: "anyway you sex life sucks" 
-    whatToDisplay: anyway you sex life sucks"!!.", // Text to display
+    whatToRead: "anyway you sex life sucks",
+    whatToDisplay: "anyway you sex life sucks!!." // Text to display
   }
 
 ];
